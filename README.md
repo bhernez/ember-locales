@@ -1,6 +1,6 @@
-# Ember-i18n
+# ember-locales
 
-This README outlines the details of collaborating on this Ember addon.
+See https://github.com/fnando/i18n-js for more details on how to use helpers.
 
 ## Installation
 

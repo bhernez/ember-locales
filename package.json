@@ -1,5 +1,5 @@
 {
-  "name": "ember-i18n",
+  "name": "ember-locales",
   "version": "0.1.0",
   "description": "A set of ember internationalization and localization helpers using i18n-js",
   "directories": {
@@ -11,7 +11,7 @@
     "build": "ember build",
     "test": "ember test"
   },
-  "repository": "https://github.com/paddle8/ember-i18n",
+  "repository": "https://github.com/paddle8/ember-locales",
   "engines": {
     "node": ">= 0.10.0"
   },
