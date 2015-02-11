@@ -1,16 +1,16 @@
 import Ember from "ember";
 import config from "../config/environment";
-import requireDirectory from "ember-i18n/utils/require-directory";
+import requireDirectory from "ember-locales/utils/require-directory";
 
-import l from "ember-i18n/helpers/l";
-import t from "ember-i18n/helpers/t";
-import join from "ember-i18n/helpers/join";
+import l from "ember-locales/helpers/l";
+import t from "ember-locales/helpers/t";
+import join from "ember-locales/helpers/join";
 
 var registerHelper = Ember.HTMLBars.registerHelper;
 var makeBoundHelper = Ember.HTMLBars.makeBoundHelper;
 
 export default {
-  name: "ember-i18n",
+  name: "ember-locales",
 
   initialize: function () {
     registerHelper('l',    makeBoundHelper(l));
