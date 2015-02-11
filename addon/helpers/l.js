@@ -64,10 +64,13 @@ export default function (params, hash) {
     return new SafeString(I18n.toHumanSize(value, hash));
   case "percentage":
     return new SafeString(I18n.toPercentage(value, hash));
-  case "time":
-  case "date":
-    return new SafeString(I18n.toTime(value, hash));
   default:
-    return value.toString();
+    var localizedValue;
+    if (scope.match(/^(date|time)/)) {
+      localizedValue = I18n.toTime(scope, value);
+    } else {
+      localizedValue = value.toString();
+    }
+    return new SafeString(I18n.interpolate(localizedValue, hash));
   }
 }
