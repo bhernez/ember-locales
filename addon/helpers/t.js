@@ -40,6 +40,6 @@
   @return {String} HTML string
  */
 export default function (params, hash) {
-  let [text] = params;
+  var text = params[0];
   return I18n.t(text, hash).htmlSafe();
 }

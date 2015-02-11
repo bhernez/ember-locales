@@ -1,4 +1,4 @@
 export default function (params, hash) {
-  let joiner = hash.joiner || '';
+  var joiner = hash.joiner || '';
   return params.join(joiner);
 }

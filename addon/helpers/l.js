@@ -1,6 +1,6 @@
 import Ember from "ember";
 
-const SafeString = Ember.Handlebars.SafeString;
+var SafeString = Ember.Handlebars.SafeString;
 
 /**
   The `{{l}}` helper renders a localized string using `I18n.l`.
@@ -52,7 +52,8 @@ const SafeString = Ember.Handlebars.SafeString;
   @return {String} HTML string
  */
 export default function (params, hash) {
-  let [scope, value] = params;
+  var scope = params[0];
+  var value = params[1];
 
   switch (scope) {
   case "currency":
