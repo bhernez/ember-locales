@@ -1,5 +1,8 @@
 # ember-locales
 
+This addon provides internationalization helpers through https://github.com/fnando/i18n-js.
+** It requires Ember 1.10+.
+
 ## Getting Started
 
 ```bash
