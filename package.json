@@ -1,6 +1,6 @@
 {
   "name": "ember-locales",
-  "version": "0.1.4",
+  "version": "0.1.5",
   "description": "A set of ember internationalization and localization helpers using i18n-js",
   "directories": {
     "doc": "doc",

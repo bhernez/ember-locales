@@ -1,5 +1,8 @@
 bower_components/
 tests/
+dist/
+*~
+*.tgz
 
 .bowerrc
 .editorconfig
