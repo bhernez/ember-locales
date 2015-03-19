@@ -6,7 +6,7 @@ import l from "ember-locales/helpers/l";
 import t from "ember-locales/helpers/t";
 import join from "ember-locales/helpers/join";
 
-var registerHelper = Ember.HTMLBars.registerHelper;
+var registerHelper = Ember.HTMLBars._registerHelper || Ember.HTMLBars.registerHelper;
 var makeBoundHelper = Ember.HTMLBars.makeBoundHelper;
 
 export default {
