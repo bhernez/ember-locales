@@ -29,9 +29,11 @@ export default {
     locales.unshiftObject(defaultLocale);
 
     locales.forEach(function (module) {
-      Ember.assert(`${module.fullName} must export a translation table.`, module.contents != null);
-      var table = module.contents.default;
-      translations[module.name] = table;
+      if(module){
+        Ember.assert(`${module.fullName} must export a translation table.`, module.contents != null);
+        var table = module.contents.default;
+        translations[module.name] = table;
+      }
     });
   }
 }
